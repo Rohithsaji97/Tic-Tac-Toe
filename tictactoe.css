@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(
+    hsla(333, 100%, 53%, 1) 0%,
+    hsla(33, 94%, 57%, 1) 100%
+  );
+  /* background-color: #231651; */
+  text-align: center;
+  font-family: "Baloo Bhai 2", sans-serif;
+}
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  height: 70vmin;
+  width: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3vmin;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 10px;
+  border: 5px solid black;
+  font-size: 8vmin;
+  text-shadow: 2px 2px 8px rgb(248, 156, 42);
+  color: #cc6247;
+  background-color: #f7f4f3;
+  /* cursor: pointer; */
+}
+
+.box:hover {
+  /* height: 18.25vmin;
+    width: 18.25vmin; */
+  background-color: rgb(187, 185, 185);
+  transition: 0.2s;
+  /* cursor: pointer; */
+}
+
+.box:active {
+  /* background-color: #F7F4F3; */
+  transform: scale(0.96);
+}
+
+#reset {
+  font-size: 6vmin;
+  color: #cc6247;
+  background-color: #f7f4f3;
+  margin: 20px 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f7f4f3;
+}
+
+#reset:hover {
+  background-color: rgb(187, 185, 185);
+  transition: 0.19s;
+  cursor: pointer;
+}
+
+#reset:active {
+  transform: scale(0.96);
+  /* Scaling button to 0.98 to its original size */
+  /* box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);  */
+  /* Lowering the shadow */
+}
+
+#heading1 {
+  color: white;
+  font-size: 8vmin;
+  cursor: default;
+}
+
+.newbtn {
+  font-size: 6vmin;
+  color: #cc6247;
+  background-color: #f7f4f3;
+  margin: 20px 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f7f4f3;
+}
+
+.newbtn:hover {
+  background-color: rgb(187, 185, 185);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.newbtn:active {
+  transform: scale(0.96);
+}
+
+#msg {
+  color: white;
+  font-size: 6vmin;
+}
+
+.msgContainer {
+  /* margin-top: 250px; */
+  height: 80vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
